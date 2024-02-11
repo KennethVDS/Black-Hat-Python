@@ -1,7 +1,6 @@
 import socket
-from urllib import response
 
-target_host = "www.google.com"
+target_host = "google.com"
 target_port = 80
 
 # Create a socket object
@@ -16,4 +15,4 @@ client.send("GET / HTTP/1.1\r\nHost: google.com\r\n\r\n")
 # Receive some data
 response = client.recv(4096)
 
-print response
+print (response)
